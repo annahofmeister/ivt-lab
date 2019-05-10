@@ -15,7 +15,7 @@ public class GT4500 implements SpaceShip {
     this.secondaryTorpedoStore = new TorpedoStore(10);
   }
 
- public inject(TorpedoStore primaryTorpedoStore, TorpedoStore secondaryTorpedoStore) {
+ public void inject(TorpedoStore primaryTorpedoStore, TorpedoStore secondaryTorpedoStore) {
     this.primaryTorpedoStore = primaryTorpedoStore;
     this.secondaryTorpedoStore = secondaryTorpedoStore;
   }
