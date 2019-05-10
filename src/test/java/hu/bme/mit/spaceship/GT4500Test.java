@@ -13,8 +13,8 @@ public class GT4500Test {
 
   @BeforeEach
   public void init(){
-    mockTS=mock(TorpedoStore.class);
-    ship=new GT4500(mockTS);
+    ship=new GT4500();
+    ship.inject(mock(TorpedoStore.class), mock(TorpedoStore.class));
   }
 
   @Test
